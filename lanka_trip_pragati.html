@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<title>Women’s Special Sri Lanka · 18–22 Nov 2026</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>
+:root{--bg:#f6f3ec;--card:#fffdf9;--tx:#1d2b2a;--mu:#68767a;--ln:#e3ddd0;--land:#e9e2cd;--sea:#e4eef0;--sel:#b4237a;--drive:#e08a2e;--air:#2f86c8;--sights:#6556cc;--meals:#4a9f4a;--leis:#8ba2b3;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#12181a;--card:#1a2326;--tx:#e8eeee;--mu:#93a2a6;--ln:#2b373b;--land:#26332f;--sea:#162124;--sel:#f06fbd;--drive:#f0a04b;--air:#5aaee8;--sights:#9a8cf0;--meals:#6cc16c;--leis:#7f95a5}}
+:root[data-theme="dark"]{--bg:#12181a;--card:#1a2326;--tx:#e8eeee;--mu:#93a2a6;--ln:#2b373b;--land:#26332f;--sea:#162124;--sel:#f06fbd;--drive:#f0a04b;--air:#5aaee8;--sights:#9a8cf0;--meals:#6cc16c;--leis:#7f95a5}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.5 Georgia,"Iowan Old Style",serif}
+.w{max-width:720px;margin:0 auto;padding:18px 14px 40px}
+h1{font-size:26px;line-height:1.15;margin:0 0 4px;letter-spacing:-.01em}
+h2{font-size:19px;margin:0 0 2px}
+.sub,.mu{color:var(--mu);font:13px/1.45 system-ui,sans-serif}
+.card{background:var(--card);border:1px solid var(--ln);border-radius:14px;padding:14px;margin-top:14px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px;font:12.5px system-ui,sans-serif}
+.chip{border:1px solid var(--ln);background:var(--card);border-radius:99px;padding:4px 10px}
+.pills{display:flex;gap:6px;margin:0 0 8px;font:600 14px system-ui,sans-serif}
+.pills button{flex:1;height:38px;border-radius:10px;border:1px solid var(--ln);background:var(--bg);color:var(--tx);cursor:pointer}
+.pills button[aria-pressed=true]{background:var(--sel);border-color:var(--sel);color:#fff}
+svg{display:block;width:100%;max-width:340px;margin:0 auto;background:var(--sea);border-radius:12px}
+svg text{font:600 13px system-ui,sans-serif;fill:var(--tx);paint-order:stroke;stroke:var(--land);stroke-width:3px}
+.stats{display:flex;flex-wrap:wrap;gap:8px 14px;margin:10px 0;font:13px system-ui,sans-serif}
+.dot{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:5px;vertical-align:-1px}
+.bar{position:relative;height:30px;border-radius:8px;background:var(--bg);border:1px solid var(--ln);overflow:hidden;margin-top:6px}
+.bar i{position:absolute;top:0;bottom:0;border-right:1px solid var(--card)}
+.tk{position:relative;height:16px;font:11px system-ui,sans-serif;color:var(--mu)}
+.tk span{position:absolute;transform:translateX(-50%)}
+ul.ev{list-style:none;margin:10px 0 0;padding:0;font:13.5px/1.35 system-ui,sans-serif}
+ul.ev li{display:flex;gap:10px;padding:6px 0;border-top:1px solid var(--ln)}
+ul.ev time{flex:0 0 92px;color:var(--mu);font-variant-numeric:tabular-nums}
+.note{margin-top:10px;padding:9px 11px;border-left:3px solid var(--sel);background:var(--bg);border-radius:0 8px 8px 0;font:13px/1.45 system-ui,sans-serif}
+.row{display:flex;align-items:center;gap:8px;margin:5px 0;font:12.5px system-ui,sans-serif;cursor:pointer;width:100%;background:none;border:0;color:var(--tx);padding:0;text-align:left}
+.row b{flex:0 0 22px}.row .t{flex:0 0 44px;color:var(--mu);text-align:right}
+.row .b{display:flex;height:16px;border-radius:5px;overflow:hidden}
+.tag{display:inline-block;margin-left:6px;padding:1px 8px;border-radius:99px;background:var(--sel);color:#fff;font:600 11.5px system-ui,sans-serif}
+table{border-collapse:collapse;width:100%;margin-top:8px;font:13px/1.4 system-ui,sans-serif}td,th{border-top:1px solid var(--ln);padding:5px 4px;text-align:left;vertical-align:top}
+</style></head><body><div class="w">
+<h1>Women’s Special Sri Lanka</h1>
+<div class="sub">5 days / 4 nights · 18–22 Nov 2026 · Veena World group tour ASWPN</div>
+<div class="chips"><span class="chip">Mumbai ⇄ Colombo</span><span class="chip">Kandy 2N · Nuwara Eliya 1N · Bentota 1N</span><span class="chip">Meals, tips &amp; entry fees included</span><span class="chip">Balance due 4 Oct</span></div>
+
+<div class="card"><h2>Route</h2><div class="mu" style="margin-bottom:10px">Tap a day to light up its route. Numbered dots are overnight stays.</div>
+<div class="pills" id="pills"></div><svg id="map" viewBox="0 0 490 820" role="img" aria-label="Map of Sri Lanka with the tour route"></svg></div>
+
+<div class="card" id="day"></div>
+
+<div class="card"><h2>All 5 days at a glance</h2><div class="mu">Hours per day by activity type. Tap a row to open that day.</div><div id="over" style="margin-top:8px"></div><div class="note" id="ins"></div></div>
+
+<div class="card"><h2>Flights &amp; road legs</h2>
+<table><tr><th>Flight</th><th>Route</th><th>Time</th></tr>
+<tr><td>UL-142</td><td>Mumbai → Colombo</td><td>18 Nov, 03:10 → 05:35</td></tr>
+<tr><td>UL-141</td><td>Colombo → Mumbai</td><td>22 Nov, 23:40 → 23 Nov, 02:10</td></tr></table>
+<table><tr><th>Road leg</th><th>Distance</th><th>Listed time</th></tr>
+<tr><td>Colombo → Kandy</td><td>150 km</td><td>3 h 30 m</td></tr>
+<tr><td>Kandy → Nuwara Eliya</td><td>77 km</td><td>1 h 30 m</td></tr>
+<tr><td>Nuwara Eliya → Bentota</td><td>210 km</td><td>5 h 45 m</td></tr>
+<tr><td>Bentota → Colombo</td><td>88 km</td><td>1 h 45 m</td></tr></table></div>
+
+<div class="card"><h2>Worth checking</h2>
+<div class="note" style="border-color:var(--drive)"><b>Payment:</b> the balance is due 45 days before departure, which is 4 Oct 2026. If it’s not paid yet, it’s overdue. The attached statement shows no amounts, and the payment link lasts only 48 hours.</div>
+<div class="note" style="border-color:var(--sights)"><b>Hotels:</b> only Kandy is named (Royal Classic Resort, request sent). Nuwara Eliya and Bentota are “to be advised”. The confirmed list comes 15 days before departure, around 3 Nov.</div>
+<div class="note" style="border-color:var(--meals)"><b>Meals not listed:</b> Day 1 lunch, and Day 5 lunch and dinner before the 23:40 flight. Ask the Tour Manager what’s planned.</div>
+<div class="note" style="border-color:var(--air)"><b>Documents &amp; bags:</b> passport valid 6+ months with blank pages, plus a tourist visa. 20 kg checked, 7 kg cabin, liquids in a clear bag (the document says 100 ml in one place and 50 ml in another, so stay under 50 ml). Power banks go in hand luggage.</div>
+<div class="note"><b>Dress codes:</b> yellow on Day 1, party wear on Day 4. Cover shoulders and knees at temples. Included: airfare, visa fees, tour manager, entry fees, tips and travel insurance up to age 59.</div>
+</div>
+<p class="mu">Drive times come from your documents. Sightseeing, meal and rest times are my estimates to show the shape of each day, and will shift with the Tour Manager’s plan and traffic.</p>
+</div>
+<script>
+const $=id=>document.getElementById(id);
+const TY={drive:["Road","--drive"],air:["Airport & flight","--air"],sights:["Sightseeing & activities","--sights"],meals:["Meals","--meals"],leisure:["Leisure & rest","--leis"]};
+const S={air:["Airport",79.88,7.17,"r"],col:["Colombo",79.86,6.93,"l"],pin:["Pinnawala",80.39,7.30,"l"],kan:["Kandy",80.63,7.29,"r"],per:["Peradeniya",80.59,7.255,"l"],ram:["Ramboda",80.70,7.07,"l"],nue:["Nuwara Eliya",80.77,6.97,"r"],amb:["Ambalangoda",80.05,6.24,"l"],ben:["Bentota",79.995,6.425,"l"],mad:["Madu River",80.04,6.27,"l"],kos:["Kosgoda",80.02,6.35,"r"]};
+const STAY={kan:"1–2",nue:"3",ben:"4"};
+const OUT=[[80.23,9.82],[80.55,9.65],[80.82,9.27],[81.0,8.95],[81.23,8.57],[81.45,8.0],[81.7,7.72],[81.82,7.42],[81.83,6.84],[81.68,6.57],[81.4,6.3],[81.12,6.12],[80.59,5.92],[80.22,6.03],[79.99,6.42],[79.85,6.93],[79.84,7.2],[79.83,8.03],[79.9,8.5],[79.78,8.98],[79.72,9.1],[79.9,9.5],[80.0,9.8]];
+const P=(lo,la)=>[((lo-79.5)*200).toFixed(0),((9.95-la)*200).toFixed(0)];
+const D=[
+{d:"Wed 18 Nov",t:"Land in Colombo, drive to Kandy",s:"Night in Kandy",dc:"Yellow",r:["air","col","pin","kan"],n:"You land at 05:35 after a 03:10 flight, but hotel check-in is 14:00–15:00. Keep a day bag and your yellow outfit handy. This is the longest first day.",
+ e:[[5.58,1.42,"air","Land, immigration, baggage"],[7,.75,"drive","Airport → Kelaniya"],[7.75,1.25,"sights","Kelaniya Temple"],[9,1.5,"sights","Colombo drive-past: clock tower, Bandaranaike Hall"],[10.5,1.5,"leisure","Shopping, House of Fashion mall"],[12,1,"meals","Lunch (not listed)"],[13,2,"drive","Colombo → Pinnawala"],[15,1.25,"sights","Pinnawala Elephant Orphanage"],[16.25,1.5,"drive","Pinnawala → Kandy"],[17.75,1.25,"leisure","Check-in, freshen up"],[19,1.25,"meals","Dinner"]]},
+{d:"Thu 19 Nov",t:"Kandy: temple, lake, gardens, dance",s:"Night in Kandy",r:["kan","per","kan"],n:"The easiest day: no long drives and you stay in the same hotel. Temple of the Tooth is a dress-modestly site.",
+ e:[[7.5,.75,"meals","Breakfast"],[8.5,1.5,"sights","Temple of the Tooth Relic"],[10,.5,"sights","Kandy Lake"],[10.5,1.5,"sights","Town, arts & crafts, gems gallery"],[12,1,"meals","Lunch"],[13,.5,"drive","To Peradeniya"],[13.5,2,"sights","Peradeniya Botanical Gardens (ice cream, tea or coffee)"],[15.5,.5,"drive","Back to Kandy"],[16,1.5,"leisure","Rest at hotel"],[17.5,1,"sights","Sri Lankan dance show"],[19,1.25,"meals","Dinner"]]},
+{d:"Fri 20 Nov",t:"Hill country: Ramboda, tea & Nuwara Eliya",s:"Night in Nuwara Eliya",r:["kan","ram","nue"],n:"Five stops after the road leg, so it’s a full day. Hotel check-out is 10:00, so bags go on the coach after breakfast.",
+ e:[[7.5,.75,"meals","Breakfast"],[8.5,1,"drive","Kandy → Ramboda"],[9.5,.75,"sights","Hanuman (Anjaneyar) Temple"],[10.25,.25,"drive","To tea factory"],[10.5,1,"sights","Tea factory (tea tasting)"],[11.5,.5,"drive","→ Nuwara Eliya"],[12,1,"meals","Lunch"],[13,.25,"drive","To Seetha Amman"],[13.25,1,"sights","Seetha Amman Temple"],[14.25,.25,"drive","To Gregory Lake"],[14.5,1,"sights","Gregory Lake speedboat"],[15.5,.5,"drive","To Hakgala"],[16,1,"sights","Hakgala Botanical Gardens"],[17,.5,"drive","To hotel"],[17.5,1.5,"leisure","Check-in, rest"],[19,1.25,"meals","Dinner"]]},
+{d:"Sat 21 Nov",t:"Long drive to Bentota, then party night",s:"Night in Bentota",dc:"Party wear",r:["nue","amb","ben"],n:"The longest drive of the trip (210 km, 5 h 45 m listed), then the ramp walk and dance. Pack your outfit where you can reach it.",
+ e:[[6.5,.75,"meals","Breakfast"],[7.5,3.75,"drive","Nuwara Eliya → toward coast"],[11.25,1,"meals","Lunch stop"],[12.25,1.25,"drive","→ Ambalangoda"],[13.5,1,"leisure","Shopping, Ambalangoda"],[14.5,1,"sights","Mask Museum"],[15.5,.5,"drive","→ Bentota"],[16,2,"leisure","Check-in, get ready"],[18,1,"sights","Ramp walk"],[19,1.5,"meals","Dinner with mocktail"],[20.5,1,"sights","Bollywood dance"]]},
+{d:"Sun 22 Nov",t:"River safari, turtles & flight home",s:"Overnight flight, lands 23 Nov 02:10",r:["ben","mad","kos","col","air"],n:"Only breakfast is listed. Lunch, dinner and what to do in Colombo before the 23:40 flight aren’t in the plan, so ask the Tour Manager.",
+ e:[[7.5,.75,"meals","Breakfast"],[8.5,1.5,"sights","Bentota River Safari"],[10,1,"sights","Madu River water sports (own cost)"],[11,.5,"drive","→ Kosgoda"],[11.5,1,"sights","Kosgoda Turtle Hatchery"],[12.5,1,"meals","Lunch (not listed)"],[13.5,1.75,"drive","Bentota → Colombo"],[15.25,3,"leisure","Free time in Colombo (not specified)"],[18.25,1.25,"meals","Dinner (not listed)"],[19.5,.5,"drive","To airport"],[20,3.67,"air","Check-in, wait, UL-141 at 23:40"]]}
+];
+let cur=0;
+const tm=t=>{let h=Math.floor(t+1e-9),m=Math.round((t-h)*60);if(m==60){h++;m=0}return String(h).padStart(2,"0")+":"+String(m).padStart(2,"0")};
+const hm=x=>{let m=Math.round(x*60),h=Math.floor(m/60);m%=60;return((h?h+"h ":"")+(m?m+"m":"")).trim()||"0"};
+const sum=d=>{const o={};for(const k in TY)o[k]=0;d.e.forEach(x=>o[x[2]]+=x[1]);return o};
+function drawMap(){
+ const land=OUT.map(p=>P(...p).join(",")).join("L");
+ let h=`<path d="M${land}Z" fill="var(--land)" stroke="var(--mu)" stroke-width="1.5" stroke-linejoin="round"/>`;
+ D.forEach((d,i)=>{if(i==cur)return;h+=`<polyline points="${d.r.map(k=>P(S[k][1],S[k][2]).join(",")).join(" ")}" fill="none" stroke="var(--mu)" stroke-opacity=".45" stroke-width="2" stroke-dasharray="4 4"/>`});
+ const c=D[cur];
+ h+=`<polyline points="${c.r.map(k=>P(S[k][1],S[k][2]).join(",")).join(" ")}" fill="none" stroke="var(--sel)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>`;
+ for(const k in STAY){const [x,y]=P(S[k][1],S[k][2]);h+=`<circle cx="${x}" cy="${y}" r="11" fill="var(--card)" stroke="var(--tx)" stroke-width="1.5"/><text x="${x}" y="${+y+4}" text-anchor="middle" style="font-size:${STAY[k].length>1?9:11}px;stroke:none">${STAY[k]}</text>`}
+ [...new Set(c.r)].forEach(k=>{const s=S[k],[x,y]=P(s[1],s[2]);if(!STAY[k])h+=`<circle cx="${x}" cy="${y}" r="5" fill="var(--sel)" stroke="var(--card)" stroke-width="2"/>`;const l=s[3]=="l";h+=`<text x="${+x+(l?-16:16)}" y="${+y+4}" text-anchor="${l?"end":"start"}">${s[0]}</text>`});
+ $("map").innerHTML=h;
+}
+function drawDay(){
+ const d=D[cur],o=sum(d),s0=Math.floor(Math.min(...d.e.map(x=>x[0]))),s1=Math.ceil(Math.max(...d.e.map(x=>x[0]+x[1]))),sp=s1-s0;
+ const segs=d.e.map(x=>`<i title="${x[3]}" style="left:${(x[0]-s0)/sp*100}%;width:${x[1]/sp*100}%;background:var(${TY[x[2]][1]})"></i>`).join("");
+ let ticks="";for(let t=s0;t<=s1;t+=(sp>9?2:1))ticks+=`<span style="left:${(t-s0)/sp*100}%">${String(t).padStart(2,"0")}</span>`;
+ const stats=Object.keys(TY).filter(k=>o[k]>0).map(k=>`<span><span class="dot" style="background:var(${TY[k][1]})"></span>${TY[k][0]} <b>${hm(o[k])}</b></span>`).join("");
+ $("day").innerHTML=`<h2>Day ${cur+1}: ${d.t}</h2><div class="sub">${d.d} · ${d.s}${d.dc?`<span class="tag">Dress code: ${d.dc}</span>`:""}</div>
+ <div class="stats">${stats}</div><div class="bar">${segs}</div><div class="tk">${ticks}</div>
+ <ul class="ev">${d.e.map(x=>`<li><time>${tm(x[0])}–${tm(x[0]+x[1])}</time><span><span class="dot" style="background:var(${TY[x[2]][1]})"></span>${x[3]} <span class="mu">(${hm(x[1])})</span></span></li>`).join("")}</ul>
+ <div class="note">${d.n}</div>`;
+}
+function drawOver(){
+ const tot=D.map(d=>sum(d)),T=tot.map(o=>Object.values(o).reduce((a,b)=>a+b,0)),mx=Math.max(...T);
+ $("over").innerHTML=D.map((d,i)=>`<button class="row" data-i="${i}"><b>D${i+1}</b><span class="b" style="width:${T[i]/mx*62}%">${Object.keys(TY).map(k=>`<i style="width:${tot[i][k]/T[i]*100}%;background:var(${TY[k][1]})"></i>`).join("")}</span><span class="t">${hm(T[i])}</span></button>`).join("")+
+ `<div class="stats" style="margin-top:10px">${Object.keys(TY).map(k=>`<span><span class="dot" style="background:var(${TY[k][1]})"></span>${TY[k][0]}</span>`).join("")}</div>`;
+ const dr=tot.reduce((a,o)=>a+o.drive,0),dd=tot.map(o=>o.drive),act=tot.map(o=>o.drive+o.sights),all=T.reduce((a,b)=>a+b,0),lz=tot.reduce((a,o)=>a+o.leisure,0);
+ $("ins").innerHTML=`About <b>${hm(dr)}</b> on the road over 5 days, and only ${Math.round(lz/all*100)}% of planned time is leisure. Day ${dd.indexOf(Math.max(...dd))+1} has the most driving (${hm(Math.max(...dd))}); Day ${act.indexOf(Math.max(...act))+1} is busiest overall at ${hm(Math.max(...act))} of driving and sightseeing. Day 2 is the lightest.`;
+ document.querySelectorAll(".row").forEach(b=>b.onclick=()=>{cur=+b.dataset.i;render();$("pills").scrollIntoView({behavior:"smooth",block:"start"})});
+}
+function pills(){$("pills").innerHTML=D.map((d,i)=>`<button aria-pressed="${i==cur}" data-i="${i}">${i+1}</button>`).join("");
+ document.querySelectorAll(".pills button").forEach(b=>b.onclick=()=>{cur=+b.dataset.i;render()})}
+function render(){pills();drawMap();drawDay()}
+render();drawOver();
+</script></body></html>
